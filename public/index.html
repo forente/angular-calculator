@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app='cal'>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+  </head>
+  <body ng-controller="screen">
+
+    <div class="calc">
+
+       <input type="text" name="screen" value="{{display}}" readonly>
+      <div class="numButton">
+        <button type="button" name="7">7</button>
+        <button type="button" name="8">8</button>
+        <button type="button" name="9">9</button>
+      </div>
+
+      <div class="numButton">
+        <button type="button" name="4">4</button>
+        <button type="button" name="5">5</button>
+        <button type="button" name="6">6</button>
+      </div>
+
+      <div class="NumButton">
+        <button type="button" name="1">1</button>
+        <button type="button" name="2">2</button>
+        <button type="button" name="3">3</button>
+      </div>
+
+      <div class="NumButton">
+        <button type="button" name="0">0</button>
+        <button type="button" name="."> . </button>
+        <button type="button" name="=">=</button>
+      </div>
+
+      <div class="operands">
+        <button type="button" name="+">+</button>
+        <button type="button" name="-">-</button>
+        <button type="button" name="/">/</button>
+        <button type="button" name="*">*</button>
+
+      </div>
+
+    </div>
+  </body>
+</html>
